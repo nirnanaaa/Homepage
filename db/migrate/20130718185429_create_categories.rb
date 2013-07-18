@@ -3,6 +3,7 @@ class CreateCategories < ActiveRecord::Migration
     create_table :categories do |t|
       t.string :name
       t.boolean :enabled
+      t.text :description
 
       t.timestamps
     end
