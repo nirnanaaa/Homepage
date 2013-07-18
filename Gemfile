@@ -58,7 +58,7 @@ group :test, :development do
   gem 'simplecov', require: false
   gem 'terminal-notifier-guard', require: false
   gem 'timecop'
-  gem 'rspec-given'
+  gem 'rspec-given' 
   gem 'pry-rails'
   gem 'pry-nav'
 end
