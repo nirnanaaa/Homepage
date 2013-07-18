@@ -1,45 +1,76 @@
 source 'https://rubygems.org'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+# default stuff
 gem 'rails', '4.0.0'
-
-# Use postgresql as the database for Active Record
 gem 'pg'
-
-# Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
-
-# Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-
-# Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
-
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
-# Use jquery as the JavaScript library
+gem 'therubyracer',                   platforms: :ruby
 gem 'jquery-rails'
-
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
-
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+
+# Important stuff
+gem 'ember-rails'
+gem 'active_model_serializers',       git: 'https://github.com/rails-api/active_model_serializers.git'
+gem 'ember-source', '1.0.0.rc6.2'
+gem 'redcarpet',                      require: false
+gem 'activerecord-postgres-hstore'
+
+
+gem 'clockwork',                      require: false
+gem 'em-redis'
+gem 'eventmachine'
+gem 'devise'
+gem 'cancan'
+gem 'thin'
+gem 'fastimage'
+gem 'fog',                            require: false
+gem 'hiredis'
+gem 'multi_json'
+gem 'omniauth'
+gem 'omniauth-openid'
+gem 'openid-redis-store'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+gem 'omniauth-github'
+gem 'omniauth-browserid', git: 'https://github.com/callahad/omniauth-browserid.git', branch: 'observer_api'
+gem 'oj'
+gem 'sidekiq'
+gem 'sidekiq-failures'
+
+
+#dev test
+group :test, :development do
+  gem "factory_girl_rails"
+  gem "capybara"
+  gem "zeus"
+  gem 'listen', require: false
+  gem 'certified', require: false
+  gem 'fabrication', require: false
+  gem 'qunit-rails'
+  gem 'guard-rspec', require: false
+  gem 'mocha', require: false
+  gem 'rb-fsevent', require: RUBY_PLATFORM =~ /darwin/i ? 'rb-fsevent' : false
+  gem 'rb-inotify', '~> 0.9', require: RUBY_PLATFORM =~ /linux/i ? 'rb-inotify' : false
+  gem 'rspec-rails', require: false
+  gem 'simplecov', require: false
+  gem 'terminal-notifier-guard', require: false
+  gem 'timecop'
+  gem 'rspec-given'
+  gem 'pry-rails'
+  gem 'pry-nav'
 end
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'librarian', '>= 0.0.25', require: false
+  gem 'annotate', :git => 'https://github.com/SamSaffron/annotate_models.git'
+end
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'redis-rack-cache', git: 'https://github.com/SamSaffron/redis-rack-cache.git', require: false
+gem 'rack-cache', require: false
+gem 'rack-cors', require: false
+gem 'unicorn', require: false
