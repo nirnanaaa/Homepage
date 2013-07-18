@@ -50,6 +50,7 @@ CREATE TABLE categories (
     id integer NOT NULL,
     name character varying(255),
     enabled boolean,
+    description text,
     created_at timestamp without time zone,
     updated_at timestamp without time zone
 );
@@ -72,6 +73,38 @@ CREATE SEQUENCE categories_id_seq
 --
 
 ALTER SEQUENCE categories_id_seq OWNED BY categories.id;
+
+
+--
+-- Name: errors; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE errors (
+    id integer NOT NULL,
+    properties hstore,
+    message text,
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone
+);
+
+
+--
+-- Name: errors_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE errors_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: errors_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE errors_id_seq OWNED BY errors.id;
 
 
 --
@@ -161,6 +194,13 @@ ALTER TABLE ONLY categories ALTER COLUMN id SET DEFAULT nextval('categories_id_s
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
+ALTER TABLE ONLY errors ALTER COLUMN id SET DEFAULT nextval('errors_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
 ALTER TABLE ONLY pages ALTER COLUMN id SET DEFAULT nextval('pages_id_seq'::regclass);
 
 
@@ -177,6 +217,14 @@ ALTER TABLE ONLY tags ALTER COLUMN id SET DEFAULT nextval('tags_id_seq'::regclas
 
 ALTER TABLE ONLY categories
     ADD CONSTRAINT categories_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: errors_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY errors
+    ADD CONSTRAINT errors_pkey PRIMARY KEY (id);
 
 
 --
@@ -214,6 +262,8 @@ INSERT INTO schema_migrations (version) VALUES ('20130718182509');
 
 INSERT INTO schema_migrations (version) VALUES ('20130718184544');
 
-INSERT INTO schema_migrations (version) VALUES ('20130718185010');
-
 INSERT INTO schema_migrations (version) VALUES ('20130718185332');
+
+INSERT INTO schema_migrations (version) VALUES ('20130718193545');
+
+INSERT INTO schema_migrations (version) VALUES ('20130718194005');
