@@ -17,8 +17,8 @@ gem 'active_model_serializers',       git: 'https://github.com/rails-api/active_
 gem 'ember-source', '1.0.0.rc6.2'
 gem 'redcarpet',                      require: false
 gem 'activerecord-postgres-hstore'
-
-
+gem 'zurb-foundation'
+gem 'shorturl'
 gem 'clockwork',                      require: false
 gem 'em-redis'
 gem 'eventmachine'
