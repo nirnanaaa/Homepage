@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/milgner/compass-rails.git
+  revision: 47d889ad8dabdab1e9f44da4447f94846c089c50
+  specs:
+    compass-rails (1.0.0.rc.3)
+      compass (~> 0.12.rc.0)
+
+GIT
   remote: https://github.com/SamSaffron/annotate_models.git
   revision: ebe4ba7e3f6ceeb43e4e40078da2b261a1bb71b2
   specs:
@@ -85,6 +92,7 @@ GEM
     celluloid (0.14.1)
       timers (>= 1.0.0)
     certified (0.1.1)
+    chunky_png (1.2.8)
     clockwork (0.5.3)
       activesupport (~> 4.0.0)
       tzinfo (~> 0.3.35)
@@ -96,6 +104,10 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    compass (0.13.alpha.0)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.2.0.alpha.93)
     connection_pool (1.1.0)
     daemons (1.1.9)
     debug_inspector (0.0.2)
@@ -145,6 +157,7 @@ GEM
       nokogiri (>= 1.4.4)
       ruby-hmac
     formatador (0.2.4)
+    fssm (0.2.10)
     given_core (3.0.0)
       sorcerer (>= 0.3.7)
     guard (1.8.1)
@@ -192,6 +205,7 @@ GEM
     minitest (4.7.5)
     mocha (0.14.0)
       metaclass (~> 0.0.1)
+    modernizr-rails (2.6.2.3)
     multi_json (1.7.7)
     multipart-post (1.2.0)
     net-scp (1.1.2)
@@ -380,6 +394,7 @@ DEPENDENCIES
   certified
   clockwork
   coffee-rails (~> 4.0.0)
+  compass-rails!
   devise
   em-redis
   ember-rails
@@ -396,6 +411,7 @@ DEPENDENCIES
   librarian (>= 0.0.25)
   listen
   mocha
+  modernizr-rails
   multi_json
   oj
   omniauth

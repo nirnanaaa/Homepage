@@ -18,6 +18,8 @@ gem 'ember-source', '1.0.0.rc6.2'
 gem 'redcarpet',                      require: false
 gem 'activerecord-postgres-hstore'
 gem 'zurb-foundation'
+gem "compass-rails",                github: "milgner/compass-rails"
+gem "modernizr-rails"
 gem 'shorturl'
 gem 'clockwork',                      require: false
 gem 'em-redis'
