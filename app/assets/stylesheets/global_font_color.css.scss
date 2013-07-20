@@ -1,0 +1,17 @@
+@import "compass/css3/transition";
+
+section#content{
+  color:#444;
+}
+body{
+  color: #eee;
+}
+a{
+  color: rgb(0, 173, 239);
+  @include transition(text-decoration 0.3s ease-out);
+  text-decoration: none;
+}
+a:hover{
+  @include transition(text-decoration 0.3s ease-in);
+  text-decoration: underline;
+}

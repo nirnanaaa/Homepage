@@ -1,9 +1,10 @@
 GIT
   remote: git://github.com/milgner/compass-rails.git
-  revision: 47d889ad8dabdab1e9f44da4447f94846c089c50
+  revision: c86e7fd9c2605c80816a2f64a3fb8b7c3a09e494
+  branch: rails4
   specs:
-    compass-rails (1.0.0.rc.3)
-      compass (~> 0.12.rc.0)
+    compass-rails (1.0.3)
+      compass (>= 0.12.2, < 0.14)
 
 GIT
   remote: https://github.com/SamSaffron/annotate_models.git
@@ -104,10 +105,10 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
-    compass (0.13.alpha.0)
+    compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
-      sass (~> 3.2.0.alpha.93)
+      sass (~> 3.1)
     connection_pool (1.1.0)
     daemons (1.1.9)
     debug_inspector (0.0.2)
@@ -169,6 +170,8 @@ GEM
     guard-rspec (3.0.2)
       guard (>= 1.8)
       rspec (~> 2.13)
+    haml (4.0.3)
+      tilt
     handlebars-source (1.0.12)
     hashie (2.0.5)
     highline (1.6.19)
@@ -405,6 +408,7 @@ DEPENDENCIES
   fastimage
   fog
   guard-rspec
+  haml
   hiredis
   jbuilder (~> 1.2)
   jquery-rails

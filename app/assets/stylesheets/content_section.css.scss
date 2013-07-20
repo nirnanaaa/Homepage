@@ -1,0 +1,13 @@
+@import 'queries';
+
+@media #{$large} {
+  .container-middle{
+    min-height:888px;
+  }
+}
+
+section#content{
+  .row{
+    background: #efefef;
+  }
+}
