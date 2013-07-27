@@ -136,7 +136,7 @@ $font-smoothing: antialiased;
 // Grid Variables
 //
 
-$row-width: emCalc(1280);
+//$row-width: emCalc(1280);
 // $column-gutter: emCalc(40);
 // $total-columns: 12;
 
@@ -1234,12 +1234,12 @@ $header-font-family: 'Montserrat', sans-serif;
 
 // Background color for the top bar
 
-// $topbar-bg: #111;
+$topbar-bg: #323435;
 
 // Height and margin
 
-// $topbar-height: 45px;
-// $topbar-margin-bottom: emCalc(30);
+$topbar-height: 50px;
+//$topbar-margin-bottom: emCalc(0);
 
 // Control Input height for top bar
 

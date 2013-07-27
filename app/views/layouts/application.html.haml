@@ -22,17 +22,27 @@
               .small-2.columns
                 LOGO
               .small-4.columns
-                ATTRS
+                %nav.top-bar
+                  %section.top-bar-section
+                    %ul.left
+                      %li.divider
+                      %li.active=link_to "bla", :root
+                    
       
 
       %section#content
-        %header.inpage
-          .row
-            .large-12.columns.breadcrumb
-              breadcrumbs
-        .row.container-middle
-          .large-12.columns
-            cotnent
+        /%header.inpage
+        /  .row
+        /    .large-12.columns.breadcrumb
+        /      breadcrumbs
+                    
+        %section.content
+        
+        %section.body
+          .row.container-middle
+            .large-12.columns
+              cotnent
+            
       
       
         

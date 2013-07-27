@@ -60,7 +60,6 @@ group :test, :development do
   gem 'rspec-rails', require: false
   gem 'simplecov', require: false
   gem 'terminal-notifier-guard', require: false
-  gem 'timecop'
   gem 'rspec-given' 
   gem 'pry-rails'
   gem 'pry-nav'
