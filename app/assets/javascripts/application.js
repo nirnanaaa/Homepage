@@ -13,15 +13,6 @@ Homepage = Ember.Application.create({
 	LOG_TRANSITIONS_INTERNAL: true
 });
 
-//= require handlebars
-//= require ember
-//= require ember-data
-//= require_self
-//= require homepage
-
-// for more details see: http://emberjs.com/guides/application/
-Homepage = Ember.Application.create();
-
-//= require_tree .
+// require_tree .
 
 $(function(){ $(document).foundation(); });
