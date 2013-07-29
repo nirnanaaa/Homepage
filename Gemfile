@@ -68,7 +68,6 @@ end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'rack-mini-profiler'
   gem 'librarian', '>= 0.0.25', require: false
   gem 'annotate', :git => 'https://github.com/SamSaffron/annotate_models.git'
 end
