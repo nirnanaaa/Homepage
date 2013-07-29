@@ -1,8 +1,18 @@
-section[role="main"],
-#content{
-  min-height:900px;
-}
-html,body{
+html,
+body,
+#wrapper{
   height: 100%;
   width: 100%;
+}
+#exceptfooter{
+  width: 100%;
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -150px
+}
+body{
+  color: #535358;
+  background: #fefefe;
 }

@@ -9,45 +9,48 @@
     %meta{:charset => "utf-8"}/
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     %title= content_for?(:title) ? yield(:title) : "Florian Kasper"
-    %link{href:'http://fonts.googleapis.com/css?family=Montserrat', rel: 'stylesheet', type: 'text/css'}
     = stylesheet_link_tag    "application", media: :screen
     = javascript_include_tag "vendor/custom.modernizr"
     = csrf_meta_tags
   %body
-    %section{role: :main}
-      %header.most-top
-        .row
-          .large-12.columns.center
-            .row
-              .small-2.columns
-                LOGO
-              .small-4.columns
-                %nav.top-bar
-                  %section.top-bar-section
-                    %ul.left
-                      %li.divider
-                      %li.active=link_to "bla", :root
-                    
+    %section#wrapper{role: :main}
+      #exceptfooter
+        %header
+        /.under-header-line
       
-
-      %section#content
-        /%header.inpage
-        /  .row
-        /    .large-12.columns.breadcrumb
-        /      breadcrumbs
-                    
-        %section.content
-        
-        %section.body
-          .row.container-middle
-            .large-12.columns
-              cotnent
-            
-      
+        %section#data
+          
+          .row
+            .middle-container
+              data
+          
+              = yield
       
         
-      = yield
-      
-      = javascript_include_tag "application"
-      
-    
+        .footer-container
+        
+        
+      %footer
+        .over-footer-line
+    / %section#wrapper{role: :main}
+    /   %header.most-top
+    /     .row
+    /       .large-3.columns
+    /         header
+    /   %header.border
+    /                 
+    /   
+    / 
+    /   %section#content
+    /     = yield
+    /   
+    /   %section.footer-abstraction      
+    /   
+    /   %footer
+    /     sdom
+    /     
+    /   
+    /   
+    /   = javascript_include_tag "application"
+    /   
+    / 

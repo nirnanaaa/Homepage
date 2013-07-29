@@ -53,7 +53,7 @@ $default-float: left;
 
 // $body-bg: #fff;
 // $body-font-color: #222;
-$body-font-family: 'Montserrat', sans-serif;
+$body-font-family: Cambria, Georgia, Times, serif;
 $body-font-weight: 400;
 // $body-font-style: normal;
 
@@ -137,7 +137,7 @@ $font-smoothing: antialiased;
 //
 
 //$row-width: emCalc(1280);
-// $column-gutter: emCalc(40);
+$column-gutter: emCalc(0);
 // $total-columns: 12;
 
 //
@@ -147,7 +147,7 @@ $font-smoothing: antialiased;
 // We use this to control the maximum number of block grid elements per row
 
 // $block-grid-elements: 12;
-// $block-grid-default-spacing: emCalc(20);
+$block-grid-default-spacing: emCalc(0);
 
 // Enables media queries for block-grid classes. Set to false if writing semantic HTML.
 
@@ -159,7 +159,7 @@ $font-smoothing: antialiased;
 
 // Control header font styles
 
-$header-font-family: 'Montserrat', sans-serif;
+$header-font-family: Cambria, Georgia, Times, serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;
