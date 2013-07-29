@@ -13,44 +13,25 @@
     = javascript_include_tag "vendor/custom.modernizr"
     = csrf_meta_tags
   %body
-    %section#wrapper{role: :main}
-      #exceptfooter
-        %header
-        .under-header-line
-      
-        %section#data
+    -#%section#wrapper{role: :main}
+    -#  #exceptfooter
+    -#    %header
+    -#    .under-header-line
+    -#  
+    -#    %section#data
           
-          .row
-            .middle-container
-              data
-          
-              = yield
-      
-        
-        .footer-container
-        
-        
-      %footer
-        .over-footer-line
-    / %section#wrapper{role: :main}
-    /   %header.most-top
-    /     .row
-    /       .large-3.columns
-    /         header
-    /   %header.border
-    /                 
-    /   
-    / 
-    /   %section#content
-    /     = yield
-    /   
-    /   %section.footer-abstraction      
-    /   
-    /   %footer
-    /     sdom
-    /     
-    /   
-    /   
+    -#     .row
+    -#       .middle-container
+    -#         data
+         
+    -#         = yield
+    -#   .footer-container
+    -# %footer
+    -#   .over-footer-line
+
     = javascript_include_tag "application"
-    /   
-    / 
+    :javascript
+      Homepage.BaseUrl = "";
+      Homepage.BaseUri = "/";
+      Homepage.Environment = "#{Rails.env}";
+      Homepage.start();

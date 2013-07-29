@@ -5,3 +5,10 @@
 	     url('/assets/Jura-Regular.woff') format('woff'), /* Modern Browsers */
 	     url('/assets/Jura-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
 	}
+@font-face {
+	font-family: 'JuraBold';
+	src: url('/assets/Jura-Bold.eot'); /* IE9 Compat Modes */
+	src: url('/assets/Jura-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('/assets/Jura-Bold.woff') format('woff'), /* Modern Browsers */
+	     url('/assets/Jura-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+	}

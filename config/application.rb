@@ -16,7 +16,7 @@ module Homepage
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
     config.time_zone = 'Berlin'
     
-    config.handlebars.templates_root = 'fkasper/templates'
+    config.handlebars.templates_root = 'templates'
     config.exceptions_app = self.routes
     config.active_record.schema_format = :sql
     

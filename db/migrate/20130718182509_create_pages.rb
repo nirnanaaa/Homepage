@@ -1,10 +1,12 @@
 class CreatePages < ActiveRecord::Migration
   def change
     create_table :pages do |t|
+      #t.hstore :meta
       t.string :title
       t.text :content
-      t.text :preview
-      t.boolean :public
+      t.boolean :published
+      t.datetime :published_until
+      t.datetime :published_from
 
       t.timestamps
     end

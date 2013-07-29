@@ -1,3 +1,3 @@
 class PageSerializer < ActiveModel::Serializer
-  attributes :id, :title, :content, :preview, :public
+  attributes :id, :meta, :title, :content, :published, :published_until, :published_from
 end

@@ -115,8 +115,9 @@ CREATE TABLE pages (
     id integer NOT NULL,
     title character varying(255),
     content text,
-    preview text,
-    public boolean,
+    published boolean,
+    published_until timestamp without time zone,
+    published_from timestamp without time zone,
     created_at timestamp without time zone,
     updated_at timestamp without time zone,
     meta hstore
@@ -262,8 +263,8 @@ INSERT INTO schema_migrations (version) VALUES ('20130718182509');
 
 INSERT INTO schema_migrations (version) VALUES ('20130718184544');
 
-INSERT INTO schema_migrations (version) VALUES ('20130718185332');
-
 INSERT INTO schema_migrations (version) VALUES ('20130718193545');
 
 INSERT INTO schema_migrations (version) VALUES ('20130718194005');
+
+INSERT INTO schema_migrations (version) VALUES ('20130729173712');
