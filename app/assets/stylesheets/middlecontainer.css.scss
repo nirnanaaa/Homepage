@@ -6,4 +6,5 @@
   background: #f7f7f7;
   padding: 20px;
   min-height: 200px;
+  @include box-shadow(rgba(170, 170, 170, 0.4) 0px 1px 1px 0px);
 }
